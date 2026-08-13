@@ -1,0 +1,30 @@
+name: Generate RouterOS CN.rsc
+
+on:
+  schedule:
+    # 每天 UTC 时间 19:50（北京时间凌晨 03:50）自动运行
+    - cron: '50 19 * * *'
+  workflow_dispatch: # 支持在 GitHub 手动点击触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch and Convert IP List
+        run: |
+          echo "Downloading metowolf china.txt..."
+          curl -sSL "https://metowolf.github.io/iplist/data/special/china.txt" -o china.txt
+
+          echo "Generating CN.rsc..."
+          echo "/ip firewall address-list remove [/ip firewall address-list find list=CN]" > CN.rsc
+          echo "/ip firewall address-list" >> CN.rsc
+          grep -v '^#' china.txt | grep -v '^$' | sed 's/^/add list=CN address=/' >> CN.rsc
+
+      - name: Commit and Push CN.rsc
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update CN.rsc [skip ci]"
+          file_pattern: "CN.rsc"
