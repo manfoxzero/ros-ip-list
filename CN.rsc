@@ -1982,11 +1982,7 @@ add list=CN address=103.199.248.0/21
 add list=CN address=103.200.136.0/21
 add list=CN address=103.200.144.0/21
 add list=CN address=103.200.220.0/22
-add list=CN address=103.200.224.0/21
-add list=CN address=103.200.233.0/24
-add list=CN address=103.200.234.0/23
-add list=CN address=103.200.236.0/22
-add list=CN address=103.200.240.0/20
+add list=CN address=103.200.224.0/19
 add list=CN address=103.201.192.0/24
 add list=CN address=103.201.196.0/22
 add list=CN address=103.201.200.0/24
@@ -3969,8 +3965,10 @@ add list=CN address=202.47.126.0/24
 add list=CN address=202.47.128.0/24
 add list=CN address=202.47.130.0/23
 add list=CN address=202.57.192.0/23
-add list=CN address=202.57.196.0/23
+add list=CN address=202.57.196.0/22
+add list=CN address=202.57.200.0/23
 add list=CN address=202.57.202.0/24
+add list=CN address=202.57.204.0/23
 add list=CN address=202.57.240.0/20
 add list=CN address=202.58.0.0/24
 add list=CN address=202.58.122.0/23
