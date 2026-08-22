@@ -1738,8 +1738,7 @@ add list=CN address=103.80.44.0/22
 add list=CN address=103.80.72.0/22
 add list=CN address=103.81.4.0/22
 add list=CN address=103.81.48.0/22
-add list=CN address=103.81.120.0/23
-add list=CN address=103.81.123.0/24
+add list=CN address=103.81.120.0/22
 add list=CN address=103.81.200.0/22
 add list=CN address=103.82.84.0/22
 add list=CN address=103.82.224.0/22
