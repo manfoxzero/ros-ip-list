@@ -5047,8 +5047,7 @@ add list=CN address=203.105.96.0/19
 add list=CN address=203.105.128.0/19
 add list=CN address=203.107.0.0/23
 add list=CN address=203.107.4.0/22
-add list=CN address=203.107.8.0/22
-add list=CN address=203.107.12.0/23
+add list=CN address=203.107.8.0/21
 add list=CN address=203.107.16.0/20
 add list=CN address=203.107.32.0/20
 add list=CN address=203.107.52.0/22
