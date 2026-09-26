@@ -5452,6 +5452,7 @@ add list=CN address=222.126.174.144/28
 add list=CN address=222.126.178.0/23
 add list=CN address=222.126.180.0/22
 add list=CN address=222.126.184.0/22
+add list=CN address=222.126.188.0/24
 add list=CN address=222.126.190.0/23
 add list=CN address=222.126.192.0/21
 add list=CN address=222.126.200.16/29
